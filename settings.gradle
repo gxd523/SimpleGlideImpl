@@ -1,0 +1,3 @@
+rootProject.name = 'SimpleGlideImpl'
+include ':app'
+include ':library'
