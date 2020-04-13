@@ -8,7 +8,7 @@ import com.impl.glide.cache.ActiveResource;
 import com.impl.glide.cache.LruBitmapPool;
 import com.impl.glide.cache.LruMemoryCache;
 import com.impl.glide.key.Key;
-import com.impl.glide.key.Objectkey;
+import com.impl.glide.key.ObjectKey;
 import com.impl.glide.recycle.Resource;
 
 public class MainActivity extends Activity {
@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Key key = new Objectkey(new Object());
+        Key key = new ObjectKey(new Object());
         Resource resource = getResource(key);
         if (resource != null) {
             Log.d("gxd", "get resource!");
