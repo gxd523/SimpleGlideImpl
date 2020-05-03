@@ -29,7 +29,7 @@ public class StringModelLoader implements ModelLoader<String, InputStream> {
         return loader.buildData(uri);
     }
 
-    public static class StreamFactory implements ModelLoaderFactory<String, InputStream> {
+    public static class Factory implements ModelLoaderFactory<String, InputStream> {
         @Override
         public ModelLoader<String, InputStream> build(ModelLoaderRegistry registry) {
             return new StringModelLoader(registry.build(Uri.class, InputStream.class));

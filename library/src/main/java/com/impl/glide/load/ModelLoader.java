@@ -21,7 +21,7 @@ public interface ModelLoader<Model, Data> {
         /**
          * 加载数据
          */
-        final DataFetcher<Data> fetcher;
+        public final DataFetcher<Data> fetcher;
 
         LoadData(Key key, DataFetcher<Data> fetcher) {
             this.key = key;
